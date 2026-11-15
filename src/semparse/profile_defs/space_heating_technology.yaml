@@ -1,0 +1,20 @@
+name: space_heating_technology
+priority: 20
+description: Space-heating generation technologies, one entity each.
+purpose_hint: SpaceHeating
+allowed_classes: [HeatPump, Boiler, ImmersionHeater, DistrictHeatingConnection, CHP]
+keywords: ["space heating technology", "sh technology", "heating power"]
+examples:
+  - input: "ground source heat pump 30 kWth + 6 kW immersion heater"
+    output:
+      entities:
+        - {class: HeatPump, source: Ground, measure_raw: "30 kWth"}
+        - {class: ImmersionHeater, measure_raw: "6 kW"}
+  - input: "gas boiler 80kW"
+    output:
+      entities:
+        - {class: Boiler, source: Gas, measure_raw: "80kW"}
+  - input: "3x 6kW immersion heaters (control)"
+    output:
+      entities:
+        - {class: ImmersionHeater, measure_raw: "6kW", quantity: 3, controllable: true}

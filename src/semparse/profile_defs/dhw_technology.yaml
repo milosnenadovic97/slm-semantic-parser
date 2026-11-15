@@ -1,0 +1,26 @@
+# Domestic hot water generation technologies.
+name: dhw_technology
+priority: 10
+description: >-
+  Domestic hot water (DHW) generation technologies. Split the cell into one
+  entity per technology.
+purpose_hint: DHW
+allowed_classes: [HeatPump, SolarThermalPanel, ImmersionHeater, Boiler]
+keywords: ["dhw technology", "dhw power", "hot water technology"]
+examples:
+  - input: >-
+      water to water heat pump (control) using treated effluent + 1 immersion
+      element - 22 kWth +3 kWth (HP + 1 immersion element)
+    output:
+      entities:
+        - {class: HeatPump, source: TreatedWastewater, sink: Water, measure_raw: "22 kWth", controllable: true}
+        - {class: ImmersionHeater, measure_raw: "3 kWth", controllable: false}
+  - input: "7.5 kWth (ASHP) (control)/ 3.5 kWth (solar thermal)"
+    output:
+      entities:
+        - {class: HeatPump, source: Air, measure_raw: "7.5 kWth", controllable: true}
+        - {class: SolarThermalPanel, purpose: DHW, measure_raw: "3.5 kWth"}
+  - input: "3x 6kW immersion heaters (control)"
+    output:
+      entities:
+        - {class: ImmersionHeater, measure_raw: "6kW", quantity: 3, controllable: true}

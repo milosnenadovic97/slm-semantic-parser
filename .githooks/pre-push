@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Pre-push eval gate: run the held-out eval and block the push if scores
+# regressed below eval/baseline.json. Bypass intentionally with:
+#     git push --no-verify
+#
+# Enable once per clone (see README):
+#     git config core.hooksPath .githooks
+set -euo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+
+echo "[pre-push] running eval (downloads the model on first run; this is slow)..."
+uv run python eval/score.py
+uv run python eval/gate.py

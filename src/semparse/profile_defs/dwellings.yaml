@@ -1,0 +1,22 @@
+name: dwellings
+priority: 60
+description: Dwelling/unit descriptions (type and count).
+allowed_classes: [Dwelling, Flat, Hub]
+keywords: ["dwelling", "unit type", "bedroom", "flat", "property type", "building type", "apartment", "hub"]
+examples:
+  - input: "2 bedroom flat x3"
+    output:
+      entities:
+        - {class: Flat, quantity: 3, attributes: {bedrooms: "2"}}
+  - input: "studio flat x4"
+    output:
+      entities:
+        - {class: Flat, quantity: 4, attributes: {form: studio}}
+  - input: "Social enterprise hub"
+    output:
+      entities:
+        - {class: Hub, attributes: {type: social enterprise}}
+  - input: "2 bedroom terraced house"
+    output:
+      entities:
+        - {class: Dwelling, quantity: 1, attributes: {bedrooms: "2", form: terraced}}

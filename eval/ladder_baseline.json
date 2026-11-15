@@ -1,0 +1,55 @@
+{
+  "seed": 0,
+  "rows": [
+    {
+      "level": "L1",
+      "label": "constrained + normalization",
+      "cells": 106,
+      "class_f1": 0.9603,
+      "entity_f1": 0.7437,
+      "segmentation": 0.9151,
+      "shacl_conformance": 0.9151,
+      "mean_violations": 0.1132
+    },
+    {
+      "level": "L2",
+      "label": "+ SHACL validation (measure)",
+      "cells": 106,
+      "class_f1": 0.9603,
+      "entity_f1": 0.7437,
+      "segmentation": 0.9151,
+      "shacl_conformance": 0.9151,
+      "mean_violations": 0.1132
+    },
+    {
+      "level": "L3",
+      "label": "+ reasoning augmentation (alone)",
+      "cells": 106,
+      "class_f1": 0.8421,
+      "entity_f1": 0.5474,
+      "segmentation": 0.8396,
+      "shacl_conformance": 0.8019,
+      "mean_violations": 0.2642
+    },
+    {
+      "level": "L4",
+      "label": "+ closed-loop SHACL repair (alone)",
+      "cells": 106,
+      "class_f1": 0.9673,
+      "entity_f1": 0.8,
+      "segmentation": 0.934,
+      "shacl_conformance": 0.9245,
+      "mean_violations": 0.0849
+    },
+    {
+      "level": "L5",
+      "label": "+ reasoning + repair",
+      "cells": 106,
+      "class_f1": 0.8417,
+      "entity_f1": 0.5252,
+      "segmentation": 0.8585,
+      "shacl_conformance": 0.8679,
+      "mean_violations": 0.1792
+    }
+  ]
+}

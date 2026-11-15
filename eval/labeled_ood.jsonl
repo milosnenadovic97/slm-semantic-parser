@@ -1,0 +1,52 @@
+{"input": "borehole heat pump 12 kW (cooling only)", "entities": [{"class": "HeatPump", "source": "Ground", "purpose": "Cooling", "power": {"value": 12.0, "unit": "kW"}}], "_slice": "relational-trap"}
+{"input": "condensing gas boiler, 28 kW output", "entities": [{"class": "Boiler", "source": "Gas", "power": {"value": 28.0, "unit": "kW"}}], "_slice": "relational-trap"}
+{"input": "3 kW resistive electric backup heater", "entities": [{"class": "ImmersionHeater", "power": {"value": 3.0, "unit": "kW"}}], "_slice": "relational-trap"}
+{"input": "5 kWp photovoltaic array", "entities": [{"class": "PVArray", "power": {"value": 5.0, "unit": "kWp"}}], "_slice": "relational-trap"}
+{"input": "flat-plate solar collectors rated 4 kWth", "entities": [{"class": "SolarThermalPanel", "source": "Solar", "power": {"value": 4.0, "unit": "kWth"}}], "_slice": "relational-trap"}
+{"input": "gas-fired cogeneration unit 60 kWe", "entities": [{"class": "CHP", "source": "Gas", "power": {"value": 60.0, "unit": "kWe"}}], "_slice": "relational-trap"}
+{"input": "brazed plate heat exchanger, 200 kW duty", "entities": [{"class": "HeatExchanger", "power": {"value": 200.0, "unit": "kW"}}], "_slice": "relational-trap"}
+{"input": "1000 litre unvented DHW cylinder", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1000.0, "unit": "L"}, "purpose": "DHW"}], "_slice": "relational-trap"}
+{"input": "pair of 5 kWh lithium batteries", "entities": [{"class": "Battery", "power": {"value": 5.0, "unit": "kWh"}, "quantity": 2}], "_slice": "counting"}
+{"input": "three 150 litre DHW cylinders", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 150.0, "unit": "L"}, "purpose": "DHW", "quantity": 3}], "_slice": "counting"}
+{"input": "2no. 6 kW immersion heaters", "entities": [{"class": "ImmersionHeater", "power": {"value": 6.0, "unit": "kW"}, "quantity": 2}], "_slice": "counting"}
+{"input": "two 12 kW air-to-water heat pumps", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 12.0, "unit": "kW"}, "quantity": 2}], "_slice": "counting"}
+{"input": "4 nr 4 kWp PV strings", "entities": [{"class": "PVArray", "power": {"value": 4.0, "unit": "kWp"}, "quantity": 4}], "_slice": "counting"}
+{"input": "battery modules 2.4 kWh, qty 3", "entities": [{"class": "Battery", "power": {"value": 2.4, "unit": "kWh"}, "quantity": 3}], "_slice": "counting"}
+{"input": "6 kW immersion (single unit only)", "entities": [{"class": "ImmersionHeater", "power": {"value": 6.0, "unit": "kW"}}], "_slice": "counting"}
+{"input": "brine-to-water heat pump 14 kWth; 300 litre DHW cylinder; 6 kWp PV", "entities": [{"class": "HeatPump", "source": "Ground", "power": {"value": 14.0, "unit": "kWth"}}, {"class": "ThermalStorageTank", "volume": {"value": 300.0, "unit": "L"}, "purpose": "DHW"}, {"class": "PVArray", "power": {"value": 6.0, "unit": "kWp"}}], "_slice": "compound"}
+{"input": "condensing gas boiler 30 kW and 1000 litre buffer and 8 kWh battery", "entities": [{"class": "Boiler", "source": "Gas", "power": {"value": 30.0, "unit": "kW"}}, {"class": "ThermalStorageTank", "volume": {"value": 1000.0, "unit": "L"}}, {"class": "Battery", "power": {"value": 8.0, "unit": "kWh"}}], "_slice": "compound"}
+{"input": "ASHP 8 kW → 210 L cylinder → 4 kWp PV → 5 kWh battery", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 8.0, "unit": "kW"}}, {"class": "ThermalStorageTank", "volume": {"value": 210.0, "unit": "L"}}, {"class": "PVArray", "power": {"value": 4.0, "unit": "kWp"}}, {"class": "Battery", "power": {"value": 5.0, "unit": "kWh"}}], "_slice": "compound"}
+{"input": "50 kWe CHP with 300 kW gas boiler backup", "entities": [{"class": "CHP", "power": {"value": 50.0, "unit": "kWe"}}, {"class": "Boiler", "source": "Gas", "power": {"value": 300.0, "unit": "kW"}}], "_slice": "compound"}
+{"input": "solar thermal 4 m2 + 5 kWp PV + 250 L DHW tank", "entities": [{"class": "SolarThermalPanel", "source": "Solar", "area": {"value": 4.0, "unit": "m2"}}, {"class": "PVArray", "power": {"value": 5.0, "unit": "kWp"}}, {"class": "ThermalStorageTank", "volume": {"value": 250.0, "unit": "L"}, "purpose": "DHW"}], "_slice": "compound"}
+{"input": "monobloc ASHP 12 kW", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 12.0, "unit": "kW"}}], "_slice": "novel-phrasing"}
+{"input": "sewer heat recovery heat pump 40 kWth", "entities": [{"class": "HeatPump", "source": "TreatedWastewater", "power": {"value": 40.0, "unit": "kWth"}}], "_slice": "novel-phrasing"}
+{"input": "wood pellet boiler 35 kW", "entities": [{"class": "Boiler", "power": {"value": 35.0, "unit": "kW"}}], "_slice": "novel-phrasing"}
+{"input": "LPG boiler 24 kW", "entities": [{"class": "Boiler", "source": "Gas", "power": {"value": 24.0, "unit": "kW"}}], "_slice": "novel-phrasing"}
+{"input": "heat interface unit connected to district network, 45 kW", "entities": [{"class": "DistrictHeatingConnection", "power": {"value": 45.0, "unit": "kW"}}], "_slice": "novel-phrasing"}
+{"input": "BESS 100 kWh", "entities": [{"class": "Battery", "power": {"value": 100.0, "unit": "kWh"}}], "_slice": "novel-phrasing"}
+{"input": "cooling machine (absorption), 30 kW", "entities": [{"class": "Chiller", "purpose": "Cooling", "power": {"value": 30.0, "unit": "kW"}}], "_slice": "novel-phrasing"}
+{"input": "rooftop photovoltaics 6.5 kWp", "entities": [{"class": "PVArray", "power": {"value": 6.5, "unit": "kWp"}}], "_slice": "novel-phrasing"}
+{"input": "evacuated tube collectors, 8 m2", "entities": [{"class": "SolarThermalPanel", "source": "Solar", "area": {"value": 8.0, "unit": "m2"}}], "_slice": "novel-phrasing"}
+{"input": "hot water tank, 500 litres, serves DHW", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 500.0, "unit": "L"}, "purpose": "DHW"}], "_slice": "novel-phrasing"}
+{"input": "ASHP 9 kw th", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 9.0, "unit": "kWth"}}], "_slice": "unit-stress"}
+{"input": "PV 4 KWP", "entities": [{"class": "PVArray", "power": {"value": 4.0, "unit": "kWp"}}], "_slice": "unit-stress"}
+{"input": "solar thermal 6 sqm", "entities": [{"class": "SolarThermalPanel", "source": "Solar", "area": {"value": 6.0, "unit": "m2"}}], "_slice": "unit-stress"}
+{"input": "buffer tank 1.5 m³", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1.5, "unit": "m3"}}], "_slice": "unit-stress"}
+{"input": "immersion 3KW", "entities": [{"class": "ImmersionHeater", "power": {"value": 3.0, "unit": "kW"}}], "_slice": "unit-stress"}
+{"input": "1,500 litres DHW cylinder", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1500.0, "unit": "L"}, "purpose": "DHW"}], "_slice": "unit-stress"}
+{"input": "air-to-water HP 14 kWth (modulating)", "header": "DHW power [kW]", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "DHW", "power": {"value": 14.0, "unit": "kWth"}}], "_slice": "header-mapped"}
+{"input": "brine-to-water HP 20 kWth & 6 kW resistive backup", "header": "SH technology", "entities": [{"class": "HeatPump", "source": "Ground", "purpose": "SpaceHeating", "power": {"value": 20.0, "unit": "kWth"}}, {"class": "ImmersionHeater", "purpose": "SpaceHeating", "power": {"value": 6.0, "unit": "kW"}}], "_slice": "header-mapped"}
+{"input": "1000 litre accumulator, DHW", "header": "Storage volume [litres]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1000.0, "unit": "L"}, "purpose": "DHW"}], "_slice": "header-mapped"}
+{"input": "photovoltaic 7 kWp; flat plate 5 m2", "header": "Solar", "entities": [{"class": "PVArray", "power": {"value": 7.0, "unit": "kWp"}}, {"class": "SolarThermalPanel", "source": "Solar", "area": {"value": 5.0, "unit": "m2"}}], "_slice": "header-mapped"}
+{"input": "lithium BESS, 20 kWh", "header": "Battery", "entities": [{"class": "Battery", "power": {"value": 20.0, "unit": "kWh"}}], "_slice": "header-mapped"}
+{"input": "block containing 10 apartments", "header": "Building type", "entities": [{"class": "Flat", "quantity": 10}], "_slice": "header-mapped"}
+{"input": "gas boiler 24 kW plus 3 kW immersion", "header": "Heating plant", "entities": [{"class": "Boiler", "source": "Gas", "power": {"value": 24.0, "unit": "kW"}}, {"class": "ImmersionHeater", "power": {"value": 3.0, "unit": "kW"}}], "_slice": "header-unmapped"}
+{"input": "50 kWe cogen unit (gas)", "header": "Generation asset", "entities": [{"class": "CHP", "source": "Gas", "power": {"value": 50.0, "unit": "kWe"}}], "_slice": "header-unmapped"}
+{"input": "electric chiller 40 kW", "header": "Cooling", "entities": [{"class": "Chiller", "purpose": "Cooling", "power": {"value": 40.0, "unit": "kW"}}], "_slice": "header-unmapped"}
+{"input": "6 kWp PV & 4 m2 solar thermal", "header": "Renewables", "entities": [{"class": "PVArray", "power": {"value": 6.0, "unit": "kWp"}}, {"class": "SolarThermalPanel", "source": "Solar", "area": {"value": 4.0, "unit": "m2"}}], "_slice": "header-unmapped"}
+{"input": "MVHR ventilation unit (not a heat generator)", "entities": [], "_slice": "distractor"}
+{"input": "smart controls / EMS installed", "entities": [], "_slice": "distractor"}
+{"input": "no low-carbon heating system recorded", "entities": [], "_slice": "distractor"}
+{"input": "innovation hub building", "header": "Building type", "entities": [{"class": "Hub"}], "_slice": "rare-class"}
+{"input": "detached bungalow, 2 bed", "header": "Building type", "entities": [{"class": "Dwelling", "quantity": 1}], "_slice": "rare-class"}
+{"input": "water-source heat pump 20 kWth drawing from canal, cooling capable", "entities": [{"class": "HeatPump", "source": "Water", "purpose": "Cooling", "power": {"value": 20.0, "unit": "kWth"}}], "_slice": "relational-trap"}

@@ -1,0 +1,56 @@
+{
+  "seed": 0,
+  "set": "labeled_ood.jsonl",
+  "rows": [
+    {
+      "level": "L1",
+      "label": "constrained + normalization",
+      "cells": 52,
+      "class_f1": 0.9062,
+      "entity_f1": 0.5,
+      "segmentation": 0.9231,
+      "shacl_conformance": 0.9615,
+      "mean_violations": 0.0769
+    },
+    {
+      "level": "L2",
+      "label": "+ SHACL validation (measure)",
+      "cells": 52,
+      "class_f1": 0.9062,
+      "entity_f1": 0.5,
+      "segmentation": 0.9231,
+      "shacl_conformance": 0.9615,
+      "mean_violations": 0.0769
+    },
+    {
+      "level": "L3",
+      "label": "+ reasoning augmentation (alone)",
+      "cells": 52,
+      "class_f1": 0.7391,
+      "entity_f1": 0.3913,
+      "segmentation": 0.8077,
+      "shacl_conformance": 0.75,
+      "mean_violations": 0.3846
+    },
+    {
+      "level": "L4",
+      "label": "+ closed-loop SHACL repair (alone)",
+      "cells": 52,
+      "class_f1": 0.8906,
+      "entity_f1": 0.4531,
+      "segmentation": 0.9231,
+      "shacl_conformance": 0.9615,
+      "mean_violations": 0.0769
+    },
+    {
+      "level": "L5",
+      "label": "+ reasoning + repair",
+      "cells": 52,
+      "class_f1": 0.7937,
+      "entity_f1": 0.4286,
+      "segmentation": 0.8077,
+      "shacl_conformance": 0.9038,
+      "mean_violations": 0.0962
+    }
+  ]
+}

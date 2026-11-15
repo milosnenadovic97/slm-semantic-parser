@@ -1,0 +1,59 @@
+[project]
+name = "semparse"
+version = "0.1.0"
+description = "An SLM-based ontology parser that turns free-text spreadsheet cells into structured, ontology-grounded entities."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "milosnenadovic97" }]
+keywords = [
+    "nlp",
+    "ontology",
+    "small-language-model",
+    "constrained-decoding",
+    "semantic-parsing",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "accelerate>=1.13.0",
+    "openpyxl>=3.1.5",
+    "outlines>=1.3.0",
+    "pydantic>=2.13.4",
+    "pyshacl>=0.30.0",
+    "pyyaml>=6.0",
+    "rdflib>=7.1.0",
+    "torch>=2.12.0",
+    "transformers>=5.11.0",
+]
+
+[project.optional-dependencies]
+# Phase-2 fine-tuning (finetune/train_lora.py). Not needed for inference/eval.
+train = [
+    "trl>=0.24.0",
+    "peft>=0.18.0",
+    "datasets>=3.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/milosnenadovic97/slm-semantic-parser"
+Repository = "https://github.com/milosnenadovic97/slm-semantic-parser"
+
+[project.scripts]
+semparse = "semparse:main"
+
+[build-system]
+requires = ["uv_build>=0.11.20,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]

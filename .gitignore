@@ -1,0 +1,35 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Generated run artifacts
+out.jsonl
+annotated.xlsx
+sample.xlsx
+.pytest_cache/
+eval/last_scores.json
+
+# Pilot data (kept local, not pushed)
+DataPilotDeployment.xlsx
+
+# Internal working doc (kept local, not pushed)
+semantic_interpretation_section.md
+.gitnexus
+
+# Kept local, not pushed
+paper/
+finetune/out/
+data/README.md
+eval/labeled_ood.md
+
+# Agent / tooling config
+.claude/
+AGENTS.md
+CLAUDE.md

@@ -1,0 +1,14 @@
+name: solar
+priority: 40
+description: "Solar installations: PV (electric) or solar thermal (heat)."
+allowed_classes: [PVArray, SolarThermalPanel]
+keywords: ["solar", "pv", "photovoltaic"]
+examples:
+  - input: "solar thermal 4 m2"
+    output:
+      entities:
+        - {class: SolarThermalPanel, measure_raw: "4 m2"}
+  - input: "5 kWp PV array"
+    output:
+      entities:
+        - {class: PVArray, measure_raw: "5 kWp"}

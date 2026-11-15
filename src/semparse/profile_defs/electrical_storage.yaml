@@ -1,0 +1,10 @@
+name: electrical_storage
+priority: 50
+description: Electrical battery storage.
+allowed_classes: [Battery]
+keywords: ["battery", "electrical storage"]
+examples:
+  - input: "500 kWh battery storage"
+    output:
+      entities:
+        - {class: Battery, measure_raw: "500 kWh"}

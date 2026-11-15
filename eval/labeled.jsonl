@@ -1,0 +1,106 @@
+{"input": "air source heat pump 12kW", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 12.0, "unit": "kW"}}]}
+{"input": "water to water heat pump (control) using treated effluent + 1 immersion element - 22 kWth +3 kWth (HP + 1 immersion element)", "entities": [{"class": "HeatPump", "source": "TreatedWastewater", "power": {"value": 22.0, "unit": "kWth"}}, {"class": "ImmersionHeater", "power": {"value": 3.0, "unit": "kWth"}}]}
+{"input": "Thermal storage volume [m3]: 1500L SH, 1000L DHW (only property where we have a separate water tank for SH)", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1500.0, "unit": "L"}, "purpose": "SpaceHeating"}, {"class": "ThermalStorageTank", "volume": {"value": 1000.0, "unit": "L"}, "purpose": "DHW"}]}
+{"input": "100L space heating (this is just a buffer, ignore it), 550L DHW (380L ASHP, 170L solar) (just consider it as one 550L tank shared)", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 550.0, "unit": "L"}, "purpose": "DHW"}]}
+{"input": "ground source heat pump 28 kWth + 9 kW immersion heater", "entities": [{"class": "HeatPump", "source": "Ground", "power": {"value": 28.0, "unit": "kWth"}}, {"class": "ImmersionHeater", "power": {"value": 9.0, "unit": "kW"}}]}
+{"input": "3 bed house x2", "entities": [{"class": "Dwelling", "quantity": 2}]}
+{"input": "DHW technology power: 5 kWth (ASHP) (control)/ 3 kWth (immersion)", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 5.0, "unit": "kWth"}}, {"class": "ImmersionHeater", "power": {"value": 3.0, "unit": "kWth"}}]}
+{"input": "solar thermal collector 5 m2", "entities": [{"class": "SolarThermalPanel", "area": {"value": 5.0, "unit": "m2"}}]}
+{"input": "250 kWh battery", "entities": [{"class": "Battery", "power": {"value": 250.0, "unit": "kWh"}}]}
+{"input": "air source heat pump 9 kWth (control) + 3 kW immersion", "header": "DHW technology power [kW]", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "DHW", "power": {"value": 9.0, "unit": "kWth"}, "controllable": true}, {"class": "ImmersionHeater", "purpose": "DHW", "power": {"value": 3.0, "unit": "kW"}}]}
+{"input": "11kW ground source heat pump", "header": "DHW technology power [kW]", "entities": [{"class": "HeatPump", "source": "Ground", "purpose": "DHW", "power": {"value": 11.0, "unit": "kW"}}]}
+{"input": "6 kWth (ASHP) / 2.5 kWth solar thermal", "header": "DHW technology power [kW]", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "DHW", "power": {"value": 6.0, "unit": "kWth"}}, {"class": "SolarThermalPanel", "purpose": "DHW", "power": {"value": 2.5, "unit": "kWth"}}]}
+{"input": "2 x 3kW immersion (control)", "header": "DHW technology power [kW]", "entities": [{"class": "ImmersionHeater", "purpose": "DHW", "power": {"value": 3.0, "unit": "kW"}, "quantity": 2, "controllable": true}]}
+{"input": "gas boiler 24 kW", "header": "DHW technology power [kW]", "entities": [{"class": "Boiler", "source": "Gas", "purpose": "DHW", "power": {"value": 24.0, "unit": "kW"}}]}
+{"input": "air source heat pump 14 kWth (control)", "header": "Space heating technology", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "SpaceHeating", "power": {"value": 14.0, "unit": "kWth"}, "controllable": true}]}
+{"input": "district heating connection 40 kW", "header": "Space heating technology", "entities": [{"class": "DistrictHeatingConnection", "purpose": "SpaceHeating", "power": {"value": 40.0, "unit": "kW"}}]}
+{"input": "CHP unit 50 kWe", "header": "Space heating technology", "entities": [{"class": "CHP", "purpose": "SpaceHeating", "power": {"value": 50.0, "unit": "kWe"}}]}
+{"input": "water source heat pump 18 kWth + 9kW immersion heater (control)", "header": "Space heating technology", "entities": [{"class": "HeatPump", "source": "Water", "purpose": "SpaceHeating", "power": {"value": 18.0, "unit": "kWth"}}, {"class": "ImmersionHeater", "purpose": "SpaceHeating", "power": {"value": 9.0, "unit": "kW"}, "controllable": true}]}
+{"input": "biomass boiler 35 kW", "header": "Space heating technology", "entities": [{"class": "Boiler", "purpose": "SpaceHeating", "power": {"value": 35.0, "unit": "kW"}}]}
+{"input": "300L DHW cylinder", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 300.0, "unit": "L"}, "purpose": "DHW"}]}
+{"input": "200 litre buffer tank for space heating", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 200.0, "unit": "L"}, "purpose": "SpaceHeating"}]}
+{"input": "250L DHW + 500L buffer (SH)", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 250.0, "unit": "L"}, "purpose": "DHW"}, {"class": "ThermalStorageTank", "volume": {"value": 500.0, "unit": "L"}, "purpose": "SpaceHeating"}]}
+{"input": "1.5 m3 thermal store", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1.5, "unit": "m3"}}]}
+{"input": "180L DHW (ignore the small 50L buffer)", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 180.0, "unit": "L"}, "purpose": "DHW"}]}
+{"input": "3.6 kWp solar PV", "header": "Solar PV / thermal", "entities": [{"class": "PVArray", "power": {"value": 3.6, "unit": "kWp"}}]}
+{"input": "solar thermal panels 6 m2", "header": "Solar PV / thermal", "entities": [{"class": "SolarThermalPanel", "area": {"value": 6.0, "unit": "m2"}}]}
+{"input": "PV 5.5 kWp + solar thermal 3 m2", "header": "Solar PV / thermal", "entities": [{"class": "PVArray", "power": {"value": 5.5, "unit": "kWp"}}, {"class": "SolarThermalPanel", "area": {"value": 3.0, "unit": "m2"}}]}
+{"input": "13.5 kWh home battery", "header": "Electrical storage", "entities": [{"class": "Battery", "power": {"value": 13.5, "unit": "kWh"}}]}
+{"input": "2 x 5kWh battery storage", "header": "Electrical storage", "entities": [{"class": "Battery", "power": {"value": 5.0, "unit": "kWh"}, "quantity": 2}]}
+{"input": "1 bed flat x6", "header": "Property type", "entities": [{"class": "Flat", "quantity": 6}]}
+{"input": "3 bedroom semi-detached house", "header": "Property type", "entities": [{"class": "Dwelling", "quantity": 1}]}
+{"input": "4x 2-bed flats", "header": "Property type", "entities": [{"class": "Flat", "quantity": 4}]}
+{"input": "community hub", "header": "Property type", "entities": [{"class": "Hub"}]}
+{"input": "air source heat pump 7kWth + 250L DHW cylinder + 4 kWp PV", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 7.0, "unit": "kWth"}}, {"class": "ThermalStorageTank", "volume": {"value": 250.0, "unit": "L"}, "purpose": "DHW"}, {"class": "PVArray", "power": {"value": 4.0, "unit": "kWp"}}]}
+{"input": "gas boiler 30kW + 1000L buffer tank", "entities": [{"class": "Boiler", "source": "Gas", "power": {"value": 30.0, "unit": "kW"}}, {"class": "ThermalStorageTank", "volume": {"value": 1000.0, "unit": "L"}}]}
+{"input": "exhaust air heat pump 5 kW", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 5.0, "unit": "kW"}}]}
+{"input": "gshp 16kWth serving underfloor heating", "entities": [{"class": "HeatPump", "source": "Ground", "purpose": "SpaceHeating", "power": {"value": 16.0, "unit": "kWth"}}]}
+{"input": "50 kWe CHP + 300 kW gas boiler", "entities": [{"class": "CHP", "power": {"value": 50.0, "unit": "kWe"}}, {"class": "Boiler", "source": "Gas", "power": {"value": 300.0, "unit": "kW"}}]}
+{"input": "absorption chiller 20 kW", "entities": [{"class": "Chiller", "purpose": "Cooling", "power": {"value": 20.0, "unit": "kW"}}]}
+{"input": "plate heat exchanger 150 kW", "entities": [{"class": "HeatExchanger", "power": {"value": 150.0, "unit": "kW"}}]}
+{"input": "2 x air source heat pumps 8kW each", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 8.0, "unit": "kW"}, "quantity": 2}]}
+{"input": "immersion heater 3kW (backup)", "entities": [{"class": "ImmersionHeater", "power": {"value": 3.0, "unit": "kW"}}]}
+{"input": "1000L thermal store + 8kWp PV + 10kWh battery", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1000.0, "unit": "L"}}, {"class": "PVArray", "power": {"value": 8.0, "unit": "kWp"}}, {"class": "Battery", "power": {"value": 10.0, "unit": "kWh"}}]}
+{"input": "water-to-water HP 30 kWth using river water", "entities": [{"class": "HeatPump", "source": "Water", "power": {"value": 30.0, "unit": "kWth"}}]}
+{"input": "district heat connection 100kW", "entities": [{"class": "DistrictHeatingConnection", "power": {"value": 100.0, "unit": "kW"}}]}
+{"input": "ashp 6kW (control) + 4kW immersion + 210L cylinder", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 6.0, "unit": "kW"}, "controllable": true}, {"class": "ImmersionHeater", "power": {"value": 4.0, "unit": "kW"}}, {"class": "ThermalStorageTank", "volume": {"value": 210.0, "unit": "L"}}]}
+{"input": "ground loop heat pump, 12 kW, cooling capable", "entities": [{"class": "HeatPump", "source": "Ground", "purpose": "Cooling", "power": {"value": 12.0, "unit": "kW"}}]}
+{"input": "gas-fired boiler 40kW", "entities": [{"class": "Boiler", "source": "Gas", "power": {"value": 40.0, "unit": "kW"}}]}
+{"input": "5.5m2 flat plate solar collectors", "entities": [{"class": "SolarThermalPanel", "area": {"value": 5.5, "unit": "m2"}}]}
+{"input": "battery 7.2 kWh x3", "entities": [{"class": "Battery", "power": {"value": 7.2, "unit": "kWh"}, "quantity": 3}]}
+{"input": "2-bed maisonette", "entities": [{"class": "Dwelling", "quantity": 1}]}
+{"input": "biomass boiler 45kW + 2000L accumulator tank", "entities": [{"class": "Boiler", "power": {"value": 45.0, "unit": "kW"}}, {"class": "ThermalStorageTank", "volume": {"value": 2000.0, "unit": "L"}}]}
+{"input": "MVHR unit (ignore, not a heat source)", "entities": []}
+{"input": "hybrid: 8kW ashp + 24kW gas boiler", "entities": [{"class": "HeatPump", "source": "Air", "power": {"value": 8.0, "unit": "kW"}}, {"class": "Boiler", "source": "Gas", "power": {"value": 24.0, "unit": "kW"}}]}
+{"input": "8 kWth ASHP (control)", "header": "DHW technology power [kW]", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "DHW", "power": {"value": 8.0, "unit": "kWth"}, "controllable": true}]}
+{"input": "gas combi 28kW", "header": "DHW technology power [kW]", "entities": [{"class": "Boiler", "source": "Gas", "purpose": "DHW", "power": {"value": 28.0, "unit": "kW"}}]}
+{"input": "3kW immersion x2", "header": "DHW technology power [kW]", "entities": [{"class": "ImmersionHeater", "purpose": "DHW", "power": {"value": 3.0, "unit": "kW"}, "quantity": 2}]}
+{"input": "solar thermal 4m2 + 6kW ASHP", "header": "DHW technology power [kW]", "entities": [{"class": "SolarThermalPanel", "purpose": "DHW", "area": {"value": 4.0, "unit": "m2"}}, {"class": "HeatPump", "source": "Air", "purpose": "DHW", "power": {"value": 6.0, "unit": "kW"}}]}
+{"input": "12 kWth ground source", "header": "DHW technology power [kW]", "entities": [{"class": "HeatPump", "source": "Ground", "purpose": "DHW", "power": {"value": 12.0, "unit": "kWth"}}]}
+{"input": "electric immersion only 3kW", "header": "DHW technology power [kW]", "entities": [{"class": "ImmersionHeater", "purpose": "DHW", "power": {"value": 3.0, "unit": "kW"}}]}
+{"input": "5kW ASHP (control) / 3kW immersion (control)", "header": "DHW technology power [kW]", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "DHW", "power": {"value": 5.0, "unit": "kW"}, "controllable": true}, {"class": "ImmersionHeater", "purpose": "DHW", "power": {"value": 3.0, "unit": "kW"}, "controllable": true}]}
+{"input": "24 kW gas boiler + 2.5 m2 solar", "header": "DHW technology power [kW]", "entities": [{"class": "Boiler", "source": "Gas", "purpose": "DHW", "power": {"value": 24.0, "unit": "kW"}}, {"class": "SolarThermalPanel", "purpose": "DHW", "area": {"value": 2.5, "unit": "m2"}}]}
+{"input": "9 kWth air source heat pump", "header": "DHW technology power [kW]", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "DHW", "power": {"value": 9.0, "unit": "kWth"}}]}
+{"input": "2x 4.5kW immersions", "header": "DHW technology power [kW]", "entities": [{"class": "ImmersionHeater", "purpose": "DHW", "power": {"value": 4.5, "unit": "kW"}, "quantity": 2}]}
+{"input": "7kW ASHP", "header": "DHW technology power [kW]", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "DHW", "power": {"value": 7.0, "unit": "kW"}}]}
+{"input": "6 kW immersion (control) + solar thermal 3 m2", "header": "DHW technology power [kW]", "entities": [{"class": "ImmersionHeater", "purpose": "DHW", "power": {"value": 6.0, "unit": "kW"}, "controllable": true}, {"class": "SolarThermalPanel", "purpose": "DHW", "area": {"value": 3.0, "unit": "m2"}}]}
+{"input": "16 kWth ASHP (control)", "header": "Space heating technology", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "SpaceHeating", "power": {"value": 16.0, "unit": "kWth"}, "controllable": true}]}
+{"input": "gas boiler 30 kW", "header": "Space heating technology", "entities": [{"class": "Boiler", "source": "Gas", "purpose": "SpaceHeating", "power": {"value": 30.0, "unit": "kW"}}]}
+{"input": "district heating 60kW", "header": "Space heating technology", "entities": [{"class": "DistrictHeatingConnection", "purpose": "SpaceHeating", "power": {"value": 60.0, "unit": "kW"}}]}
+{"input": "22kW GSHP + 9kW immersion (control)", "header": "Space heating technology", "entities": [{"class": "HeatPump", "source": "Ground", "purpose": "SpaceHeating", "power": {"value": 22.0, "unit": "kW"}}, {"class": "ImmersionHeater", "purpose": "SpaceHeating", "power": {"value": 9.0, "unit": "kW"}, "controllable": true}]}
+{"input": "CHP 80 kWe (control)", "header": "Space heating technology", "entities": [{"class": "CHP", "purpose": "SpaceHeating", "power": {"value": 80.0, "unit": "kWe"}, "controllable": true}]}
+{"input": "water source heat pump 20 kWth", "header": "Space heating technology", "entities": [{"class": "HeatPump", "source": "Water", "purpose": "SpaceHeating", "power": {"value": 20.0, "unit": "kWth"}}]}
+{"input": "35kW biomass boiler", "header": "Space heating technology", "entities": [{"class": "Boiler", "purpose": "SpaceHeating", "power": {"value": 35.0, "unit": "kW"}}]}
+{"input": "2 x 12kW air source heat pumps", "header": "Space heating technology", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "SpaceHeating", "power": {"value": 12.0, "unit": "kW"}, "quantity": 2}]}
+{"input": "immersion heater 6kW", "header": "Space heating technology", "entities": [{"class": "ImmersionHeater", "purpose": "SpaceHeating", "power": {"value": 6.0, "unit": "kW"}}]}
+{"input": "district heat 45 kW + 15kW backup boiler (gas)", "header": "Space heating technology", "entities": [{"class": "DistrictHeatingConnection", "purpose": "SpaceHeating", "power": {"value": 45.0, "unit": "kW"}}, {"class": "Boiler", "source": "Gas", "purpose": "SpaceHeating", "power": {"value": 15.0, "unit": "kW"}}]}
+{"input": "14 kWth ashp (control) / 3kW immersion", "header": "Space heating technology", "entities": [{"class": "HeatPump", "source": "Air", "purpose": "SpaceHeating", "power": {"value": 14.0, "unit": "kWth"}, "controllable": true}, {"class": "ImmersionHeater", "purpose": "SpaceHeating", "power": {"value": 3.0, "unit": "kW"}}]}
+{"input": "50kWe CHP", "header": "Space heating technology", "entities": [{"class": "CHP", "purpose": "SpaceHeating", "power": {"value": 50.0, "unit": "kWe"}}]}
+{"input": "300L DHW + 500L buffer SH", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 300.0, "unit": "L"}, "purpose": "DHW"}, {"class": "ThermalStorageTank", "volume": {"value": 500.0, "unit": "L"}, "purpose": "SpaceHeating"}]}
+{"input": "2 m3 buffer", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 2.0, "unit": "m3"}}]}
+{"input": "500 litre cylinder (DHW)", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 500.0, "unit": "L"}, "purpose": "DHW"}]}
+{"input": "1200L accumulator", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1200.0, "unit": "L"}}]}
+{"input": "250L DHW cylinder + ignore 40L expansion vessel", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 250.0, "unit": "L"}, "purpose": "DHW"}]}
+{"input": "800L thermal store for space heating", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 800.0, "unit": "L"}, "purpose": "SpaceHeating"}]}
+{"input": "3x 150L DHW cylinders", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 150.0, "unit": "L"}, "purpose": "DHW", "quantity": 3}]}
+{"input": "0.75 m3 buffer tank", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 0.75, "unit": "m3"}}]}
+{"input": "180L DHW + 300L SH buffer", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 180.0, "unit": "L"}, "purpose": "DHW"}, {"class": "ThermalStorageTank", "volume": {"value": 300.0, "unit": "L"}, "purpose": "SpaceHeating"}]}
+{"input": "1.0 m3 DHW store", "header": "Thermal storage volume [m3]", "entities": [{"class": "ThermalStorageTank", "volume": {"value": 1.0, "unit": "m3"}, "purpose": "DHW"}]}
+{"input": "4 kWp PV", "header": "Solar PV / thermal", "entities": [{"class": "PVArray", "power": {"value": 4.0, "unit": "kWp"}}]}
+{"input": "10m2 solar thermal", "header": "Solar PV / thermal", "entities": [{"class": "SolarThermalPanel", "area": {"value": 10.0, "unit": "m2"}}]}
+{"input": "6.5 kWp solar PV + 4 m2 solar thermal", "header": "Solar PV / thermal", "entities": [{"class": "PVArray", "power": {"value": 6.5, "unit": "kWp"}}, {"class": "SolarThermalPanel", "area": {"value": 4.0, "unit": "m2"}}]}
+{"input": "3 kWp PV array", "header": "Solar PV / thermal", "entities": [{"class": "PVArray", "power": {"value": 3.0, "unit": "kWp"}}]}
+{"input": "evacuated tube solar 5 m2", "header": "Solar PV / thermal", "entities": [{"class": "SolarThermalPanel", "area": {"value": 5.0, "unit": "m2"}}]}
+{"input": "8kWp rooftop PV", "header": "Solar PV / thermal", "entities": [{"class": "PVArray", "power": {"value": 8.0, "unit": "kWp"}}]}
+{"input": "2 x 4kWp PV arrays", "header": "Solar PV / thermal", "entities": [{"class": "PVArray", "power": {"value": 4.0, "unit": "kWp"}, "quantity": 2}]}
+{"input": "10 kWh battery", "header": "Electrical storage", "entities": [{"class": "Battery", "power": {"value": 10.0, "unit": "kWh"}}]}
+{"input": "2 x 5 kWh batteries", "header": "Electrical storage", "entities": [{"class": "Battery", "power": {"value": 5.0, "unit": "kWh"}, "quantity": 2}]}
+{"input": "13.5kWh home battery (control)", "header": "Electrical storage", "entities": [{"class": "Battery", "power": {"value": 13.5, "unit": "kWh"}, "controllable": true}]}
+{"input": "7kWh battery storage", "header": "Electrical storage", "entities": [{"class": "Battery", "power": {"value": 7.0, "unit": "kWh"}}]}
+{"input": "3x 2.4kWh battery modules", "header": "Electrical storage", "entities": [{"class": "Battery", "power": {"value": 2.4, "unit": "kWh"}, "quantity": 3}]}
+{"input": "2 bed flat x4", "header": "Property type", "entities": [{"class": "Flat", "quantity": 4}]}
+{"input": "3 bedroom detached house", "header": "Property type", "entities": [{"class": "Dwelling", "quantity": 1}]}
+{"input": "community hub building", "header": "Property type", "entities": [{"class": "Hub"}]}
+{"input": "1-bed flats x8", "header": "Property type", "entities": [{"class": "Flat", "quantity": 8}]}
+{"input": "5x 3-bed houses", "header": "Property type", "entities": [{"class": "Dwelling", "quantity": 5}]}
+{"input": "block of 12 flats", "header": "Property type", "entities": [{"class": "Flat", "quantity": 12}]}

@@ -1,0 +1,8 @@
+{
+  "cells": 106,
+  "class_f1": 0.9603,
+  "entity_f1": 0.7437,
+  "segmentation": 0.9151,
+  "shacl_conformance": 0.9151,
+  "mean_violations": 0.1132
+}

@@ -1,0 +1,17 @@
+name: thermal_storage
+priority: 30
+description: >-
+  Thermal storage tanks. Emit one entity per distinct tank with its volume and
+  the service (DHW / SpaceHeating) it serves.
+allowed_classes: [ThermalStorageTank]
+keywords: ["thermal storage", "storage volume", "tank", "buffer"]
+examples:
+  - input: "1500L SH, 1000L DHW"
+    output:
+      entities:
+        - {class: ThermalStorageTank, purpose: SpaceHeating, measure_raw: "1500L"}
+        - {class: ThermalStorageTank, purpose: DHW, measure_raw: "1000L"}
+  - input: "800L thermal store (shared between SH and DHW)"
+    output:
+      entities:
+        - {class: ThermalStorageTank, purposes: [SpaceHeating, DHW], measure_raw: "800L"}
